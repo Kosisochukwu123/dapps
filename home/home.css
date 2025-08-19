@@ -1,0 +1,232 @@
+@media screen and (max-width: 576px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --header-font: "Orbitron", sans-serif;
+    --text-font: "Roboto Flex", sans-serif;
+  }
+
+  body {
+    background-color: #1b1f22;
+  }
+
+  header {
+    height: 100vh;
+    width: 100%;
+    background-color: #1b1f22;
+    overflow: hidden;
+    position: relative;
+  }
+
+  nav {
+    border: 2px solid;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    margin-top: -0.1rem;
+    /* position: absolute; */
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1rem;
+    font-size: 20px;
+  }
+
+  nav ul li {
+    list-style-type: none;
+    text-transform: capitalize;
+    color: white;
+  }
+
+  nav ul a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--text-font);
+  }
+
+  .logo p {
+    color: white;
+  }
+
+  .header-video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .header-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+  }
+
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+    padding: 0.5em 1rem;
+    text-align: center;
+  }
+
+  .header-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-family: var(--header-font);
+  }
+
+  .header-content p {
+    font-size: 1rem;
+    width: 100%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-family: var(--text-font);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.658);
+    backdrop-filter: blur(5px);
+  }
+
+  .header-button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .header-button button {
+    padding: 0.5em 1.5em;
+    font-size: 1.2rem;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-family: var(--text-font);
+  }
+
+  .links-top h1 {
+    font-family: var(--header-font);
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .links-top p {
+    font-family: var(--text-font);
+    color: white;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  .links {
+    margin-top: 3rem;
+    padding: 2rem 0rem;
+  }
+
+  .links-boxes {
+    width: 100%;
+  }
+
+  .links-boxes .box {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.265);
+    border: 2px solid white;
+    backdrop-filter: blur(5px);
+    gap: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    padding-right: 0.6em;
+  }
+
+  .box-icon {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-icon i {
+    color: white !important;
+    font-size: 60px;
+  }
+
+  .box-content {
+    width: 65%;
+    border: 1px solid white;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 1rem;
+  }
+
+  .box-content h3 {
+    color: white;
+    font-family: var(--header-font);
+    font-size: 23px;
+    margin: 0.5rem 0;
+    text-transform: capitalize;
+    text-align: left;
+  }
+
+  .box-content a {
+    color: white;
+    font-size: 14px;
+    margin: 0.5rem 0;
+    font-family: var(--text-font);
+    text-transform: capitalize;
+  }
+
+  footer {
+    height: 17vh;
+    margin-top: 2rem;
+    background-color: white;
+
+    text-align: center;
+    padding: 1.5rem 0.5rem;
+  }
+
+  footer a {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: var(--header-font);
+    letter-spacing: 0.1em;
+  }
+
+  footer p {
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    font-family: var(--text-font);
+  }
+}
