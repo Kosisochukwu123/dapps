@@ -119,6 +119,10 @@
             margin-top: 2rem;
         }
     }
+
+    .wallet-box.hide {
+        display: none;
+    }
 </style>
 
 
@@ -127,13 +131,10 @@
 
 
     <section class="header">
-
         <img src="../img icons/nature.png" width="40" alt="">
         <h1>connect wallet</h1>
         <p>please connect your wallet to continue</p>
-        <input type="text" placeholder="search wallet name">
-
-
+        <input type="text" id="searchInput" placeholder="search wallet name">
     </section>
 
 
@@ -196,6 +197,28 @@
         </div>
 
     </section>
+
+
+    <script>
+
+        const searchInput = document.getElementById("searchInput");
+        const wallets = document.querySelectorAll(".wallet-box");
+
+        searchInput.addEventListener("keyup", function () {
+            let filter = searchInput.value.toLowerCase();
+
+            wallets.forEach(wallet => {
+                let name = wallet.querySelector("p").textContent.toLowerCase();
+
+                if (name.includes(filter)) {
+                    wallet.classList.remove("hide");
+                } else {
+                    wallet.classList.add("hide");
+                }
+            });
+        });
+
+    </script>
 
 
 
