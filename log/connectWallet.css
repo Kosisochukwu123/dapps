@@ -21,7 +21,6 @@
   .wallet-box {
     width: 100%;
     height: 10vh;
-    /* border: 2px solid white; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,30 +80,19 @@
   }
 }
 
-/* Small Mobile Devices (up to 576px) - Your existing code */
-@media screen and (max-width: 576px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  :root {
-    --header-font: "Orbitron", sans-serif;
-    --text-font: "Roboto Flex", sans-serif;
-  }
-
+/* Mobile landscape orientation (phone rotated) */
+@media screen and (max-width: 896px) and (orientation: landscape) {
   .wallet {
-    padding: 1rem;
+    padding: 0.5rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 4rem !important;
-    margin-top: 2rem;
+    grid-template-columns: repeat(5, 1fr); /* More columns in landscape */
+    row-gap: 2rem !important;
+    margin-top: 8rem !important;
   }
 
   .wallet-box {
     width: 100%;
-    height: 10vh;
+    height: 15vh; /* Adjusted for landscape */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,30 +101,31 @@
 
   .wallet-box img {
     border-radius: 50%;
-    width: 40%;
+    width: 50%; 
     object-fit: cover;
   }
 
   .wallet-box p {
     text-transform: capitalize;
-    font-size: 12px;
-    margin-top: 0.5rem;
+    font-size: 10px;
+    margin-top: 0.3rem;
     color: white;
     font-family: var(--text-font);
   }
 
   .header {
-    height: 30vh;
+    height: 40vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem !important;
   }
 
   .header input {
-    margin-top: 1rem;
-    padding: 0.8rem 0rem;
-    width: 90%;
+    margin-top: 0.5rem;
+    padding: 0.6rem 0rem;
+    width: 70%; /* Narrower in landscape */
     text-align: center;
     outline: none;
   }
@@ -144,22 +133,27 @@
   .header h1 {
     color: white;
     text-transform: capitalize;
-    font-size: 40px;
+    font-size: 28px; /* Smaller font in landscape */
     font-family: var(--header-font);
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   .header p {
     color: white;
     text-transform: capitalize;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0.1em;
-    margin-top: 1em;
+    margin-top: 0.5em;
     font-family: var(--text-font);
   }
 
   .header img {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    max-height: 8vh; /* Limit image height in landscape */
+  }
+
+  footer{
+    height: fit-content;
   }
 }
 
