@@ -1,0 +1,788 @@
+@media screen and (max-width: 576px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --header-font: "Orbitron", sans-serif;
+    --text-font: "Roboto Flex", sans-serif;
+  }
+
+  .wallet {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 4rem !important;
+    margin-top: 2rem;
+  }
+
+  .wallet-box {
+    width: 100%;
+    height: 10vh;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wallet-box img {
+    /* border: 2px solid white; */
+    border-radius: 50%;
+    width: 40%;
+    object-fit: cover;
+  }
+
+  .wallet-box p {
+    text-transform: capitalize;
+    font-size: 12px;
+    margin-top: 0.5rem;
+    color: white;
+    font-family: var(--text-font);
+  }
+
+  .header {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header input {
+    margin-top: 1rem;
+    padding: 0.8rem 0rem;
+    width: 90%;
+    text-align: center;
+    outline: none;
+  }
+
+  .header h1 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-family: var(--header-font);
+    margin-top: 2rem;
+  }
+
+  .header p {
+    color: white;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    margin-top: 1em;
+    font-family: var(--text-font);
+  }
+
+  .header img {
+    margin-top: 2rem;
+  }
+}
+
+/* Small Mobile Devices (up to 576px) - Your existing code */
+@media screen and (max-width: 576px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --header-font: "Orbitron", sans-serif;
+    --text-font: "Roboto Flex", sans-serif;
+  }
+
+  .wallet {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 4rem !important;
+    margin-top: 2rem;
+  }
+
+  .wallet-box {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wallet-box img {
+    border-radius: 50%;
+    width: 40%;
+    object-fit: cover;
+  }
+
+  .wallet-box p {
+    text-transform: capitalize;
+    font-size: 12px;
+    margin-top: 0.5rem;
+    color: white;
+    font-family: var(--text-font);
+  }
+
+  .header {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header input {
+    margin-top: 1rem;
+    padding: 0.8rem 0rem;
+    width: 90%;
+    text-align: center;
+    outline: none;
+  }
+
+  .header h1 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-family: var(--header-font);
+    margin-top: 2rem;
+  }
+
+  .header p {
+    color: white;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    margin-top: 1em;
+    font-family: var(--text-font);
+  }
+
+  .header img {
+    margin-top: 2rem;
+  }
+}
+
+/* Large Mobile / Small Tablet Portrait (577px - 767px) */
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --header-font: "Orbitron", sans-serif;
+    --text-font: "Roboto Flex", sans-serif;
+  }
+
+  .wallet {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 4.5rem !important;
+    column-gap: 1rem;
+    margin-top: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wallet-box {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+
+  .wallet-box:hover {
+    transform: scale(1.05);
+  }
+
+  .wallet-box img {
+    border-radius: 50%;
+    width: 45%;
+    object-fit: cover;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .wallet-box:hover img {
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  }
+
+  .wallet-box p {
+    text-transform: capitalize;
+    font-size: 13px;
+    margin-top: 0.7rem;
+    color: white;
+    font-family: var(--text-font);
+  }
+
+  .header {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+  }
+
+  .header input {
+    margin-top: 1.5rem;
+    padding: 1rem 1rem;
+    width: 85%;
+    text-align: center;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  .header h1 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 45px;
+    font-family: var(--header-font);
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .header p {
+    color: white;
+    text-transform: capitalize;
+    font-size: 17px;
+    letter-spacing: 0.1em;
+    margin-top: 1.2em;
+    font-family: var(--text-font);
+    text-align: center;
+    max-width: 500px;
+  }
+
+  .header img {
+    margin-top: 2.5rem;
+  }
+}
+
+/* Tablet Portrait / Small Desktop (768px - 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --header-font: "Orbitron", sans-serif;
+    --text-font: "Roboto Flex", sans-serif;
+  }
+
+  .wallet {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 5rem !important;
+    column-gap: 1.5rem;
+    margin-top: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wallet-box {
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .wallet-box:hover {
+    transform: translateY(-5px) scale(1.08);
+  }
+
+  .wallet-box img {
+    border-radius: 50%;
+    width: 50%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+
+  .wallet-box:hover img {
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .wallet-box p {
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-top: 0.8rem;
+    color: white;
+    font-family: var(--text-font);
+    font-weight: 500;
+  }
+
+  .header {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  .header input {
+    margin-top: 2rem;
+    padding: 1.2rem 1.5rem;
+    width: 75%;
+    text-align: center;
+    outline: none;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+
+  .header input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+  }
+
+  .header h1 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 52px;
+    font-family: var(--header-font);
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .header p {
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    margin-top: 1.4em;
+    font-family: var(--text-font);
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.5;
+  }
+
+  .header img {
+    margin-top: 3rem;
+  }
+}
+
+/* Medium Desktop (992px - 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --header-font: "Orbitron", sans-serif;
+    --text-font: "Roboto Flex", sans-serif;
+  }
+
+  .wallet {
+    padding: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 5.5rem !important;
+    column-gap: 2rem;
+    margin-top: 3.5rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wallet-box {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 1rem;
+  }
+
+  .wallet-box:hover {
+    transform: translateY(-8px) scale(1.1);
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+  }
+
+  .wallet-box img {
+    border-radius: 50%;
+    width: 55%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+    border: 3px solid transparent;
+  }
+
+  .wallet-box:hover img {
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.7);
+    transform: rotate(5deg);
+  }
+
+  .wallet-box p {
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-top: 1rem;
+    color: white;
+    font-family: var(--text-font);
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .header {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+  }
+
+  .header input {
+    margin-top: 2.5rem;
+    padding: 1.4rem 2rem;
+    width: 70%;
+    text-align: center;
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid #ddd;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  .header input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
+    transform: scale(1.02);
+  }
+
+  .header h1 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 58px;
+    font-family: var(--header-font);
+    margin-top: 2.5rem;
+    text-align: center;
+  }
+
+  .header p {
+    color: white;
+    text-transform: capitalize;
+    font-size: 19px;
+    letter-spacing: 0.1em;
+    margin-top: 1.6em;
+    font-family: var(--text-font);
+    text-align: center;
+    max-width: 700px;
+    line-height: 1.6;
+  }
+
+  .header img {
+    margin-top: 3.5rem;
+  }
+}
+
+/* Large Desktop (1200px - 1399px) */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --header-font: "Orbitron", sans-serif;
+    --text-font: "Roboto Flex", sans-serif;
+  }
+
+  .wallet {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 6rem !important;
+    column-gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+
+  .wallet-box {
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    border-radius: 20px;
+    padding: 1rem;
+    padding-bottom: 4rem;
+    border: 1px solid transparent;
+  }
+
+  .wallet-box:hover {
+    transform: translateY(-10px) scale(1.12);
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
+  }
+
+  .wallet-box img {
+    border-radius: 50%;
+    width: 60%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+    border: 4px solid transparent;
+  }
+
+  .wallet-box:hover img {
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.8);
+    transform: rotate(8deg) scale(1.05);
+  }
+
+  .wallet-box p {
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-top: 1.2rem;
+    color: white;
+    font-family: var(--text-font);
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .header {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 4rem;
+  }
+
+  .header input {
+    margin-top: 1.5rem;
+    padding: 1.6rem 2.5rem;
+    width: 65%;
+    text-align: center;
+    outline: none;
+    border-radius: 20px;
+    border: 3px solid #ddd;
+    font-size: 19px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 10vh;
+  }
+
+  .header input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 25px rgba(0, 123, 255, 0.5);
+    transform: scale(1.03);
+  }
+
+  .header h1 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 65px;
+    font-family: var(--header-font);
+    margin-top: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .header p {
+    color: white;
+    text-transform: capitalize;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    margin-top: 1em;
+    font-family: var(--text-font);
+    text-align: center;
+    max-width: 800px;
+    line-height: 1.7;
+  }
+
+  .header img {
+    margin-top: 4rem;
+  }
+}
+
+/* Extra Large Desktop (1400px and up) */
+@media screen and (min-width: 1400px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --header-font: "Orbitron", sans-serif;
+    --text-font: "Roboto Flex", sans-serif;
+  }
+
+  .wallet {
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 7rem !important;
+    column-gap: 3rem;
+    margin-top: 5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .wallet-box {
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 2rem;
+    padding-bottom: 3rem;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .wallet-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      45deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent
+    );
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+  }
+
+  .wallet-box:hover::before {
+    transform: translateX(100%);
+  }
+
+  .wallet-box:hover {
+    transform: translateY(-12px) scale(1.15);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 25px 50px rgba(255, 255, 255, 0.15);
+  }
+
+  .wallet-box img {
+    border-radius: 50%;
+    width: 65%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+    border: 5px solid transparent;
+    position: relative;
+    z-index: 2;
+  }
+
+  .wallet-box:hover img {
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.6);
+    border-color: rgba(255, 255, 255, 0.9);
+    transform: rotate(10deg) scale(1.08);
+  }
+
+  .wallet-box p {
+    text-transform: capitalize;
+    font-size: 17px;
+    margin-top: 1.5rem;
+    color: white;
+    font-family: var(--text-font);
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .header {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+  }
+
+  .header input {
+    margin-top: 3.5rem;
+    padding: 2rem 3rem;
+    width: 60%;
+    text-align: center;
+    outline: none;
+    border-radius: 25px;
+    border: 4px solid #ddd;
+    font-size: 20px;
+    transition: all 0.4s ease;
+    background-color: rgba(255, 255, 255, 0.99);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .header input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 30px rgba(0, 123, 255, 0.6), 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+
+  .header h1 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 72px;
+    font-family: var(--header-font);
+    margin-top: 3.5rem;
+    text-align: center;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(45deg, #fff, #ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .header p {
+    color: white;
+    text-transform: capitalize;
+    font-size: 22px;
+    letter-spacing: 0.12em;
+    margin-top: 2em;
+    font-family: var(--text-font);
+    text-align: center;
+    max-width: 900px;
+    line-height: 1.8;
+  }
+
+  .header img {
+    margin-top: 4.5rem;
+  }
+}

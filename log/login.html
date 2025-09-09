@@ -9,8 +9,6 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="../home/home.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,107 +17,15 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
-    <script src="login.js"></script>
+    <script src="errorMessage.js"></script>
 
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../home/home.css">
+    <link rel="stylesheet" href="errorMessage.css">
+    <link rel="stylesheet" href="connectWallet.css">
 
 </head>
 
 <style>
-    @media screen and (max-width: 576px) {
-
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --header-font: "Orbitron", sans-serif;
-            --text-font: "Roboto Flex", sans-serif;
-        }
-
-        .wallet {
-            padding: 1rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            row-gap: 4rem !important;
-            margin-top: 2rem;
-        }
-
-
-
-        .wallet-box {
-            width: 100%;
-            height: 10vh;
-            /* border: 2px solid white; */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-
-        .wallet-box img {
-            /* border: 2px solid white; */
-            border-radius: 50%;
-            width: 40%;
-            object-fit: cover;
-        }
-
-        .wallet-box p {
-            text-transform: capitalize;
-            font-size: 12px;
-            margin-top: 0.5rem;
-            color: white;
-            font-family: var(--text-font);
-        }
-
-
-        .header {
-            height: 30vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-
-        .header input {
-            margin-top: 1rem;
-            padding: 0.8rem 0rem;
-            width: 90%;
-            text-align: center;
-            outline: none;
-
-        }
-
-
-        .header h1 {
-            color: white;
-            text-transform: capitalize;
-            font-size: 40px;
-            font-family: var(--header-font);
-            margin-top: 2rem;
-
-        }
-
-        .header p {
-            color: white;
-            text-transform: capitalize;
-            font-size: 16px;
-            letter-spacing: 0.1em;
-            margin-top: 1em;
-            font-family: var(--text-font);
-
-        }
-
-        .header img {
-            margin-top: 2rem;
-        }
-    }
-
     .wallet-box.hide {
         display: none;
     }
@@ -195,6 +101,660 @@
             <p>safemoon wallet</p>
 
         </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/walletconnect-icon.jpeg" alt="walletconnect-icon">
+            <p>wallet connect</p>
+
+        </div>
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/vechain.png" alt="vechain-wallet-icon">
+            <p>vechain</p>
+
+        </div>
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/brd.png" alt="brd-wallet-icon">
+            <p>brd wallet</p>
+
+        </div>
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/cakewallet.jpeg" alt="cake-wallet-icon">
+            <p>cake wallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/kelpr.jpeg" alt="kelpr-wallet-icon">
+            <p>keplr wallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/saitamask.jpeg" alt="saitamask-wallet-icon">
+            <p>saitamask wallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/nem.png" alt="nem-wallet-icon">
+            <p>nem wallet</p>
+
+        </div>
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/kaspa.png" alt="kaspa-wallet-icon">
+            <p>kaspa</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/compass.jpeg" alt="compass-wallet-icon">
+            <p>compass wallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/stack.png" alt="stack-wallet-icon">
+            <p>stack wallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/solflare.png" alt="solfare-wallet-icon">
+            <p>solflare wallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/aioz.png" alt="aioz-wallet-icon">
+            <p>AIOZ wallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/polkadot.png" alt="polkadot-wallet-icon">
+            <p>polkadot wallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/xportal.jpeg" alt="xportal-icon">
+            <p>xportal wallet</p>
+
+        </div>
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/unknown.jpeg" alt="multiVerse x-wallet-icon">
+            <p> multiverse x wallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/unknown.jpeg" alt="xlpa vault-wallet-icon">
+            <p>xpla vault wallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/unknown.jpeg" alt="verachain-wallet-icon">
+            <p>verachain wallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/fearless.jpeg" alt="fearless-wallet-icon">
+            <p>fearless wallet</p>
+
+        </div>
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/terastation.png" alt="terastation-wallet-icon">
+            <p>terra station</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/phantom.png" alt="phantom-wallet-icon">
+            <p>phantom wallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/cosmos.jpeg" alt="cosmos-wallet-icon">
+            <p>cosmos wallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/exodus.jpeg" alt="exodus-wallet-icon">
+            <p>exodus wallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/rainbow.jpeg" alt="rainbow-wallet-icon">
+            <p>rainbow</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/argent.png" alt="argent-wallet-icon">
+            <p>argent</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/binance chain.png" alt="binanceChain-wallet-icon">
+            <p>binance chain</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/unknown.jpeg" alt="GnosisSafe-wallet-icon">
+            <p>Gnosis Safe</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/defi.png" alt="defi-wallet-icon">
+            <p>defi</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/pillar.png" alt="pillar-wallet-icon">
+            <p>pillar</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/imtoken.jpeg" alt="imtoken-wallet-icon">
+            <p>imToken</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/onto.png" alt="onto-wallet-icon">
+            <p>ONTO</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/tokenpocket.png" alt="tokenPocket-wallet-icon">
+            <p>tokenPocket</p>
+
+        </div>
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/aave.jpeg" alt="aave-wallet-icon">
+            <p>Aave</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/digitex.png" alt="digitex-wallet-icon">
+            <p>Digitex</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/portis.jpeg" alt="portis-wallet-icon">
+            <p>portis</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/formatic.png" alt="formatic-wallet-icon">
+            <p>formatic</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/math.jpeg" alt="MathWallet-wallet-icon">
+            <p>MathWallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/bitpay.jpeg" alt="bitpay-wallet-icon">
+            <p>bitpay</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/ledgerLive.png" alt="ledgerLive-wallet-icon">
+            <p>ledger live</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/unknown.jpeg" alt="WalletEth-wallet-icon">
+            <p>walletETH</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/authereum.png" alt="authereum-wallet-icon">
+            <p>Authereum</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/dharma.jpeg" alt="Dharma-wallet-icon">
+            <p>dharma</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/linch.jpeg" alt="linch-wallet-icon">
+            <p>linch Wallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/huobi.jpeg" alt="huobi-wallet-icon">
+            <p>huobi</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/eidoo.png" alt="eidoo-wallet-icon">
+            <p>Eidoo</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/mykey.png" alt="Mykey-wallet-icon">
+            <p>MYKEY</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/loopring.jpeg" alt="loopring-wallet-icon">
+            <p>loopring</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/trustVault.jpeg" alt="TrustVault-wallet-icon">
+            <p>TrustVault</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/atomic.png" alt="atomic-wallet-icon">
+            <p>Atomic</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/coin98.png" alt="coin98-wallet-icon">
+            <p>Coin98</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/alice.png" alt="alice-wallet-icon">
+            <p>alice</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/alpha.png" alt="alpha-wallet-icon">
+            <p>AlphaWallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/dcent.png" alt="dcent-wallet-icon">
+            <p>D'CENT</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/zelcore.jpeg" alt="zelcore-wallet-icon">
+            <p>ZelCore</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/nash.png" alt="Nash-wallet-icon">
+            <p>Nash</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/unknown.jpeg" alt="coinmoni-wallet-icon">
+            <p>Coinmoni</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/gridplus.png" alt="gridplus-wallet-icon">
+            <p>GridPlus</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/cybavo.png" alt="cybavo-wallet-icon">
+            <p>CYBAVO</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/tokenary.jpeg" alt="tokenary-wallet-icon">
+            <p>tokenary</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/torus.jpeg" alt="torus-wallet-icon">
+            <p>torus</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/spatium.png" alt="spatium-wallet-icon">
+            <p>spatium</p>
+
+        </div>
+
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/infinito.png" alt="infinito-wallet-icon">
+            <p>infinito</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/wallet.io.png" alt="Wallet.io-wallet-icon">
+            <p>Wallet.io</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/ownbit.jpeg" alt="ownbit-wallet-icon">
+            <p>ownbit</p>
+
+        </div>
+
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/easyPocket.png" alt="easyPocket-wallet-icon">
+            <p>EasyPocket</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/bridge.png" alt="bridge-wallet-icon">
+            <p>bridge Wallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/sparkPoint.jpeg" alt="sparkpoint-wallet-icon">
+            <p>SparkPoint</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/via.png" alt="via-wallet-icon">
+            <p>ViaWallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/bitkeep.png" alt="bitkeep-wallet-icon">
+            <p>Bitkeep</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/vision.jpeg" alt="vision-wallet-icon">
+            <p>vision</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/peakdefi.jpeg" alt="peakDefi-wallet-icon">
+            <p>PEAKDEFI</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/unstoppable.jpeg" alt="unstoppable-wallet-icon">
+            <p>unstoppable</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/halodefi.png" alt="halodefi-wallet-icon">
+            <p>haloDefi</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/dok.jpeg" alt="dok-wallet-icon">
+            <p>Dok Wallet</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/midas.png" alt="Midas-wallet-icon">
+            <p>Midas</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/ellipal.png" alt="ellipal-wallet-icon">
+            <p>Ellipal</p>
+
+        </div>
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/keyring pro.png" alt="Keyring pro-wallet-icon">
+            <p>KEYRING PRO</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/aktionariat.png" alt="aktionariat-wallet-icon">
+            <p>aktionariat</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/talken.jpeg" alt="talken-wallet-icon">
+            <p>talken</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/flare.png" alt="flare-wallet-icon">
+            <p>flare</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/unknown.jpeg" alt="kyber-wallet-icon">
+            <p>KyberSwap</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/payTube.jpeg" alt="paytube-wallet-icon">
+            <p>payTube</p>
+
+        </div>
+
+
+        <div class="wallet-box">
+
+            <img onclick="showErrorCard()" src="../img icons/linen.png" alt="linen-wallet-icon">
+            <p>linen</p>
+
+        </div>
+
+
+
+
 
     </section>
 
