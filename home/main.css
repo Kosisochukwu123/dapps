@@ -231,7 +231,21 @@
   }
 }
 
-/* Mobile First (Default) - 320px to 576px */
+/* Mobile landscape orientation (phone rotated) */
+@media screen and (max-width: 896px) and (orientation: landscape) {
+
+  .header-button {
+    top: 85% !important;
+  }
+
+  .links-boxes .box {
+    height: fit-content !important;
+  }
+
+  footer {
+    height: fit-content !important;
+  }
+}
 
 /* Small Mobile Phones - Portrait */
 @media screen and (max-width: 320px) {
